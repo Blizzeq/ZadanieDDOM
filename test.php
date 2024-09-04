@@ -25,3 +25,8 @@ echo "Email Validation:\n";
 foreach ($emails as $email) {
     echo $email . ': ' . ($validator->validateEmail($email) ? 'Valid' : 'Invalid') . "\n";
 }
+
+echo "\nPassword Validation:\n";
+foreach ($passwords as $password) {
+    echo $password . ': ' . ($validator->validatePassword($password) ? 'Valid' : 'Invalid') . "\n";
+}
