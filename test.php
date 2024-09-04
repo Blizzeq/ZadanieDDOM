@@ -20,3 +20,8 @@ $passwords = [
     'NOLOWERCASE1!',
     'nouppercase1!',
 ];
+
+echo "Email Validation:\n";
+foreach ($emails as $email) {
+    echo $email . ': ' . ($validator->validateEmail($email) ? 'Valid' : 'Invalid') . "\n";
+}
